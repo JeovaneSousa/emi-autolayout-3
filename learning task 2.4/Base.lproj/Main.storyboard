@@ -65,8 +65,8 @@
                                     <constraint firstItem="5Hg-7D-UA1" firstAttribute="trailing" secondItem="p2q-LZ-guM" secondAttribute="trailing" id="iRq-AB-cl7"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-1v-6MA" userLabel="View Flutuante">
-                                <rect key="frame" x="40" y="231" width="310" height="433"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-1v-6MA" userLabel="View Flutuante">
+                                <rect key="frame" x="40" y="231.33333333333334" width="310" height="432.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYP-ws-p5D" userLabel="Text Field Email">
                                         <rect key="frame" x="24" y="24" width="262" height="48"/>
@@ -93,15 +93,37 @@
                                             <color key="baseBackgroundColor" red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qix-CG-0qd" userLabel="Label Centro">
+                                        <rect key="frame" x="145.66666666666666" y="260" width="19" height="64.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKn-FS-r4O" userLabel="Button Login Google">
+                                        <rect key="frame" x="24" y="336.66666666666663" width="262" height="48"/>
+                                        <color key="tintColor" red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Login com Google" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseBackgroundColor" red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="MYP-ws-p5D" firstAttribute="leading" secondItem="NQ4-1v-6MA" secondAttribute="leading" constant="24" id="0ri-WU-G9L"/>
+                                    <constraint firstItem="eKn-FS-r4O" firstAttribute="height" secondItem="MYP-ws-p5D" secondAttribute="height" id="1Cm-zU-oJv"/>
+                                    <constraint firstItem="eKn-FS-r4O" firstAttribute="top" secondItem="qix-CG-0qd" secondAttribute="bottom" constant="12" id="FH5-8e-wj6"/>
+                                    <constraint firstItem="qix-CG-0qd" firstAttribute="centerX" secondItem="tTW-9E-oHF" secondAttribute="centerX" id="Gd7-Am-n1W"/>
                                     <constraint firstItem="tTW-9E-oHF" firstAttribute="top" secondItem="0I1-Mk-CE2" secondAttribute="bottom" constant="48" id="Gvl-XB-2pd"/>
                                     <constraint firstItem="0I1-Mk-CE2" firstAttribute="leading" secondItem="MYP-ws-p5D" secondAttribute="leading" id="HbV-Cp-wvD"/>
+                                    <constraint firstItem="eKn-FS-r4O" firstAttribute="bottom" secondItem="NQ4-1v-6MA" secondAttribute="bottom" constant="-48" id="ITF-mq-1xh"/>
                                     <constraint firstItem="tTW-9E-oHF" firstAttribute="height" secondItem="MYP-ws-p5D" secondAttribute="height" id="Tf5-rN-JjV"/>
                                     <constraint firstItem="0I1-Mk-CE2" firstAttribute="trailing" secondItem="MYP-ws-p5D" secondAttribute="trailing" id="Wbs-gp-J5s"/>
                                     <constraint firstItem="0I1-Mk-CE2" firstAttribute="top" secondItem="MYP-ws-p5D" secondAttribute="bottom" constant="32" id="e0i-y6-Zht"/>
+                                    <constraint firstItem="eKn-FS-r4O" firstAttribute="leading" secondItem="0I1-Mk-CE2" secondAttribute="leading" id="fE5-6v-avc"/>
+                                    <constraint firstItem="eKn-FS-r4O" firstAttribute="trailing" secondItem="0I1-Mk-CE2" secondAttribute="trailing" id="jaa-AG-FMU"/>
+                                    <constraint firstItem="qix-CG-0qd" firstAttribute="top" secondItem="tTW-9E-oHF" secondAttribute="bottom" constant="12" id="mV6-B7-8g2"/>
                                     <constraint firstItem="0I1-Mk-CE2" firstAttribute="height" secondItem="MYP-ws-p5D" secondAttribute="height" id="nda-Q6-Kri"/>
                                     <constraint firstItem="MYP-ws-p5D" firstAttribute="top" secondItem="NQ4-1v-6MA" secondAttribute="top" constant="24" id="qhZ-1b-F4H"/>
                                     <constraint firstItem="tTW-9E-oHF" firstAttribute="trailing" secondItem="MYP-ws-p5D" secondAttribute="trailing" id="ucy-YJ-kr5"/>
@@ -120,6 +142,7 @@
                         <constraints>
                             <constraint firstItem="NQ4-1v-6MA" firstAttribute="top" secondItem="2Yg-iC-72H" secondAttribute="bottom" constant="-64" id="5N4-BJ-trf"/>
                             <constraint firstItem="NQ4-1v-6MA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-24" id="5x6-Xl-hpO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NQ4-1v-6MA" secondAttribute="bottom" constant="146" id="Grj-Lm-IEt"/>
                             <constraint firstItem="NQ4-1v-6MA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="PR2-2L-2tE"/>
                             <constraint firstItem="nzk-uW-Pig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="QnF-lY-JDW"/>
                             <constraint firstItem="2Yg-iC-72H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="Rh9-ci-Vpf"/>
@@ -142,6 +165,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
