@@ -66,8 +66,48 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ4-1v-6MA" userLabel="View Flutuante">
-                                <rect key="frame" x="40" y="231.33333333333337" width="310" height="128"/>
+                                <rect key="frame" x="40" y="231" width="310" height="433"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYP-ws-p5D" userLabel="Text Field Email">
+                                        <rect key="frame" x="24" y="24" width="262" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="ifo-dT-pAq"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-Mk-CE2" userLabel="Text Field Senha">
+                                        <rect key="frame" x="24" y="103.99999999999997" width="262" height="48"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTW-9E-oHF" userLabel="Button Login">
+                                        <rect key="frame" x="24" y="199.99999999999997" width="262" height="48"/>
+                                        <color key="tintColor" red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.32941176470588235" green="0.42745098039215684" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="MYP-ws-p5D" firstAttribute="leading" secondItem="NQ4-1v-6MA" secondAttribute="leading" constant="24" id="0ri-WU-G9L"/>
+                                    <constraint firstItem="tTW-9E-oHF" firstAttribute="top" secondItem="0I1-Mk-CE2" secondAttribute="bottom" constant="48" id="Gvl-XB-2pd"/>
+                                    <constraint firstItem="0I1-Mk-CE2" firstAttribute="leading" secondItem="MYP-ws-p5D" secondAttribute="leading" id="HbV-Cp-wvD"/>
+                                    <constraint firstItem="tTW-9E-oHF" firstAttribute="height" secondItem="MYP-ws-p5D" secondAttribute="height" id="Tf5-rN-JjV"/>
+                                    <constraint firstItem="0I1-Mk-CE2" firstAttribute="trailing" secondItem="MYP-ws-p5D" secondAttribute="trailing" id="Wbs-gp-J5s"/>
+                                    <constraint firstItem="0I1-Mk-CE2" firstAttribute="top" secondItem="MYP-ws-p5D" secondAttribute="bottom" constant="32" id="e0i-y6-Zht"/>
+                                    <constraint firstItem="0I1-Mk-CE2" firstAttribute="height" secondItem="MYP-ws-p5D" secondAttribute="height" id="nda-Q6-Kri"/>
+                                    <constraint firstItem="MYP-ws-p5D" firstAttribute="top" secondItem="NQ4-1v-6MA" secondAttribute="top" constant="24" id="qhZ-1b-F4H"/>
+                                    <constraint firstItem="tTW-9E-oHF" firstAttribute="trailing" secondItem="MYP-ws-p5D" secondAttribute="trailing" id="ucy-YJ-kr5"/>
+                                    <constraint firstItem="tTW-9E-oHF" firstAttribute="leading" secondItem="MYP-ws-p5D" secondAttribute="leading" id="vhe-0O-T4I"/>
+                                    <constraint firstItem="MYP-ws-p5D" firstAttribute="trailing" secondItem="NQ4-1v-6MA" secondAttribute="trailing" constant="-24" id="yFe-KT-lD8"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="12"/>
@@ -97,6 +137,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
